@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_WEBFORMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="ID_R" />
+    </Key>
+    <Property Name="ID_R" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="USERS" Relationship="Self.FK__USERS__ID_R__398D8EEE" FromRole="ROLES" ToRole="USERS" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="ID_U" />
+    </Key>
+    <Property Name="ID_U" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_USER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASS" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_R" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ROLES" Relationship="Self.FK__USERS__ID_R__398D8EEE" FromRole="USERS" ToRole="ROLES" />
+  </EntityType>
+  <Association Name="FK__USERS__ID_R__398D8EEE">
+    <End Role="ROLES" Type="Self.ROLES" Multiplicity="1" />
+    <End Role="USERS" Type="Self.USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ID_R" />
+      </Principal>
+      <Dependent Role="USERS">
+        <PropertyRef Name="ID_R" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_WEBFORMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ROLES" EntityType="Self.ROLES" />
+    <EntitySet Name="USERS" EntityType="Self.USERS" />
+    <AssociationSet Name="FK__USERS__ID_R__398D8EEE" Association="Self.FK__USERS__ID_R__398D8EEE">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="USERS" EntitySet="USERS" />
+    </AssociationSet>
+    <FunctionImport Name="ADD_ROLES">
+      <Parameter Name="NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_ROLES">
+      <Parameter Name="NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_ROLES">
+      <Parameter Name="ID_R" Mode="In" Type="Int32" />
+      <Parameter Name="NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="VALIDATION_USER" ReturnType="Collection(Int32)">
+      <Parameter Name="USER" Mode="In" Type="String" />
+      <Parameter Name="PASS" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

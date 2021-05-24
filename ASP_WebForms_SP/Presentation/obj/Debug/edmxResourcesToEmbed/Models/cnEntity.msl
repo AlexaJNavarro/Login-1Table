@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_WEBFORMModelStoreContainer" CdmEntityContainer="DB_WEBFORMEntities">
+    <EntitySetMapping Name="ROLES">
+      <EntityTypeMapping TypeName="DB_WEBFORMModel.ROLES">
+        <MappingFragment StoreEntitySet="ROLES">
+          <ScalarProperty Name="ID_R" ColumnName="ID_R" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="DB_WEBFORMModel.USERS">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="ID_U" ColumnName="ID_U" />
+          <ScalarProperty Name="C_USER" ColumnName="_USER" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="ID_R" ColumnName="ID_R" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ADD_ROLES" FunctionName="DB_WEBFORMModel.Store.ADD_ROLES" />
+    <FunctionImportMapping FunctionImportName="DELETE_ROLES" FunctionName="DB_WEBFORMModel.Store.DELETE_ROLES" />
+    <FunctionImportMapping FunctionImportName="UPDATE_ROLES" FunctionName="DB_WEBFORMModel.Store.UPDATE_ROLES" />
+    <FunctionImportMapping FunctionImportName="VALIDATION_USER" FunctionName="DB_WEBFORMModel.Store.VALIDATION_USER" />
+  </EntityContainerMapping>
+</Mapping>

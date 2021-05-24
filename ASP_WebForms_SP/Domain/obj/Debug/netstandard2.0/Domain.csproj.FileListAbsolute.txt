@@ -1,0 +1,14 @@
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Data.dll
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\Alexandra\source\repos\ASP_WebForms_SP\Domain\obj\Debug\netstandard2.0\Domain.pdb
